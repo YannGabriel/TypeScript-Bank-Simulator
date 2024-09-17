@@ -44,6 +44,13 @@ class PeopleAccount extends Account{
   }
 }
 
+class CompanyAccount extends Account{
+
+  constructor(name: string, accountNumber: number){
+    super(name, accountNumber)
+  }
+}
+
 const PA1: PeopleAccount = new PeopleAccount(198291, "Yann", 1)
 console.log(PA1)
 
