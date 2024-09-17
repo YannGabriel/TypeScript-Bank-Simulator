@@ -7,18 +7,12 @@
 
 abstract class Account {
   name: string
-  age: number
-  document: number
   accountNumber: number
   balance:number = 0
 
   constructor(name: string,
-    age: number,
-    document: number,
     accountNumber: number){
       this.name = name
-      this.age = age
-      this.document = document
       this.accountNumber = accountNumber
    }
 
@@ -36,15 +30,22 @@ abstract class Account {
 }
 
 class Adimin extends Account{
-  constructor(name: string, age: number, document: number, accountNumber: number){
-    super(name, age, document, accountNumber)
+  constructor(name: string, accountNumber: number){
+    super(name, accountNumber)
   }
 }
 
-const Id1: Adimin = new Adimin("Yann", 19, 1098230, 19)
-console.log(Id1)
+class PeopleAccount extends Account{
+  document : number
 
-const Id3: Account = new Account("Larissa", 18, 198291, 20)
-console.log(Id3)
+  constructor(documentId: number, name: string, accountNumber: number){
+    super(name, accountNumber)
+    this.document = documentId
+  }
+}
+
+const PA1: PeopleAccount = new PeopleAccount(198291, "Yann", 1)
+console.log(PA1)
+
 
 
