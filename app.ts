@@ -10,10 +10,6 @@ import {CompanyAccount } from "./class/CompanyAccount";
 
 
 const peopleAccount: PeopleAccount = new PeopleAccount(1, "Yann", 1)
-peopleAccount.deposit(400)
-
-
-const companyAccount: CompanyAccount = new CompanyAccount("Yann", 1)
-companyAccount.deposit(5000)
+peopleAccount.deposit(10)
 
 
