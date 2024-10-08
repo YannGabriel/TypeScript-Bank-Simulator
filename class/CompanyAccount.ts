@@ -1,5 +1,5 @@
 
-import { DioAccount } from "./DioAccount"
+import {DioAccount } from "./DioAccount"
 
 export class CompanyAccount extends DioAccount{
 
@@ -7,11 +7,9 @@ export class CompanyAccount extends DioAccount{
     super(name, accountNumber)
   }
 
-  getLoan = () : void =>{
-    console.log("Você fez um empréstimo!")
-  }
+  getLoan = (value: number) : void =>{
+      console.log("Your Company make a Loan!!")
+      this.withdraw(this.balance - value)
 
-  deposit = (value:number):void =>{
-    console.log(`The company deposit ${value}`)
   }
 }
