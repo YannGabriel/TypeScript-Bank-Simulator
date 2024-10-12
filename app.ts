@@ -7,7 +7,7 @@
 
 import {PeopleAccount} from "./class/PeopleAccount";
 import {CompanyAccount } from "./class/CompanyAccount";
-import {BonusAccount } from "./class/bonusAccount";
+import {BonusAccount } from "./class/BonusAccount";
 
 
 const peopleAccount: PeopleAccount = new PeopleAccount(1, "Yann", 1)
